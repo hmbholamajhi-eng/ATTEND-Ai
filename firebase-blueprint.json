@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "entities": {
+    "studentProfile": {
+      "path": "/users/{userId}/profile/main",
+      "fields": {
+        "name": { "type": "string" },
+        "college": { "type": "string" },
+        "branch": { "type": "string" },
+        "semester": { "type": "string" },
+        "targetPercentage": { "type": "number" },
+        "updatedAt": { "type": "number" }
+      }
+    },
+    "subject": {
+      "path": "/users/{userId}/subjects/{subjectId}",
+      "fields": {
+        "name": { "type": "string" },
+        "code": { "type": "string" },
+        "targetPercentage": { "type": "number" },
+        "color": { "type": "string" },
+        "syllabus": { "type": "array" },
+        "resources": { "type": "array" },
+        "updatedAt": { "type": "number" }
+      }
+    },
+    "timetableSlot": {
+      "path": "/users/{userId}/timetable/{slotId}",
+      "fields": {
+        "subjectId": { "type": "string" },
+        "day": { "type": "string" },
+        "startTime": { "type": "string" },
+        "endTime": { "type": "string" },
+        "room": { "type": "string" },
+        "faculty": { "type": "string" },
+        "updatedAt": { "type": "number" }
+      }
+    },
+    "attendanceRecord": {
+      "path": "/users/{userId}/records/{recordId}",
+      "fields": {
+        "date": { "type": "string" },
+        "subjectId": { "type": "string" },
+        "timetableSlotId": { "type": "string" },
+        "status": { "type": "string" },
+        "note": { "type": "string" },
+        "timestamp": { "type": "number" }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "AttendAI",
+  "description": "Offline-first attendance tracker and smart math engine with safe bunk calculator, timetable builder, analytics, and instant one-tap tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
